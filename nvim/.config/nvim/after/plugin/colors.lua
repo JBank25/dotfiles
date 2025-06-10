@@ -1,0 +1,13 @@
+-- TODO: How and why does this work. Prevents the mismatched
+-- colors after adding the tokyonight theme.Without this filw
+-- you'll see a more grey washed out sort of background rather
+-- than the black one you are used to. Comment out the last
+-- line and then reopen nvim to see
+
+-- function ColorMyPencils(color)
+	-- color = color or "tokyonight"
+	-- vim.cmd.colorscheme(color)
+	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- end
+-- ColorMyPencils()
