@@ -1,3 +1,13 @@
+This is your friend when something isn't working:
+```
+:checkhealth <PLUGIN_NAME_HERE>
+```
+For example:
+```
+:checkhealth telescope
+```
+
+
 ### indent-blankline
 
 Draws a line going down the editor at a given line of code to
