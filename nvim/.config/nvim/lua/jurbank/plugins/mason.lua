@@ -36,8 +36,9 @@ return {
 
     config = function()
       local capabilities = require("blink.cmp").get_lsp_capabilities()
-      require("lspconfig").lua_ls.setup { capabilities = capabilities }
-      require("lspconfig").clangd.setup { capabilities = capabilities }
+      require("lspconfig").lua_ls.setup({ capabilities = capabilities })
+      require("lspconfig").clangd.setup({ capabilities = capabilities })
+      require("lspconfig").pyright.setup({ capabilities = capabilities })
       -- Looks like if we want specific functinoality we will have to
       -- set things like this
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)

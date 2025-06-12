@@ -14,6 +14,8 @@ return {
 				require("none-ls.diagnostics.cpplint"),
 				-- :MasonInstall stylua for lua formatter
 				null_ls.builtins.formatting.stylua,
+				null_ls.builtins.formatting.black,
+				null_ls.builtins.formatting.isort,
 				-- clang formatter cor C/C++ already installed with LSP I guess
 
 				-- cpplint for linting
