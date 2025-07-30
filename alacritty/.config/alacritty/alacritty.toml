@@ -1,0 +1,15 @@
+general.live_config_reload = true
+
+
+[window]
+dynamic_padding = false
+
+# Use fc-list to find available fonts to you
+[font]
+# Needed to make file explorer icons render in alacritty
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+# Optionally, you can also specify bold/italic variations if you have them:
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 12.0  
+
