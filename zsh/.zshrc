@@ -1,17 +1,17 @@
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/joshuaurbank/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/joshuaurbank/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/joshuaurbank/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/joshuaurbank/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$('/Users/joshuaurbank/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/Users/joshuaurbank/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/joshuaurbank/opt/anaconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/Users/joshuaurbank/opt/anaconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
 # <<< conda initialize <<<
 
 # alias
@@ -24,7 +24,7 @@ alias ls="ls -G"
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
 autoload -Uz vcs_info
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 
 # vi keybindings
@@ -103,6 +103,8 @@ export FZF_CTRL_R_OPTS="
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
   --color header:italic
   --header 'Press CTRL-Y to copy command into clipboard'"
+
+eval "$(starship init zsh)"
 
 # Load syntax highlighting; should be last.
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
